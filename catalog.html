@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUSS - Logistic</title>
+    <link rel="stylesheet" href="assets/libs/swiper-bundle.min.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+
+        <!-- шапка сайта - старт -->
+
+        <header class="header">
+            <div class="container">
+
+                <!-- верхняя строка шапки - Старт-->
+                <div class="header__row">
+                    <div class="header__location">
+                        <button class="icon-location"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="ui-f2"><path fill="currentColor" d="M8 9a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"></path><path fill="currentColor" d="M8 0a7 7 0 0 0-7 7c0 2.91 1.713 5.148 3.285 6.596a15.845 15.845 0 0 0 2.945 2.13c.155.085.32.172.406.205a1 1 0 0 0 .728 0c.086-.033.25-.12.406-.206a15.846 15.846 0 0 0 2.945-2.13C13.287 12.149 15 9.91 15 7a7 7 0 0 0-7-7ZM3 7a5 5 0 0 1 10 0c0 2.09-1.237 3.833-2.64 5.125A13.846 13.846 0 0 1 8 13.863a13.847 13.847 0 0 1-2.36-1.738C4.237 10.833 3 9.09 3 7Z"></path></svg> Город</button>
+                        <button class="icon-location-2">Укажите адрес доставки</button>
+                    </div>
+                    <div class="header__info">
+                        <a href="#">AUSS для бизнеса</a>
+                        <!-- <a href="#">Мобильное приложение</a> -->
+                        <a href="#">Продавайте на AUSS</a>
+                        <a href="#">Реферальная система</a>
+                        <!-- <a href="#">Подарочные сертификаты</a> -->
+                        <a href="#">Помощь</a>
+                        <a href="#">Пункты выдачи</a>
+                    </div>
+                </div>
+                <!-- верхняя строка шапки - Старт-->
+
+                <!-- средняя строка шапки - старт -->
+                <div class="header__row">
+                    <div class="header__logo">
+                        <a href="#">
+                            <img src="assets/imgs/icons/title.png" alt="">
+                            <span>
+                                AUSS
+                                LOGISTIC
+                            </span>
+                        </a>
+                    </div>
+                    <div class="header__catalog-btn">
+                        <button class="catalog-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="ui-f2"><path fill="currentColor" d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm2 0a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H8a1 1 0 0 1-1-1Zm0 6a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H8a1 1 0 0 1-1-1Zm1 5a1 1 0 1 0 0 2h6a1 1 0 1 0 0-2H8Zm-4-4a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm1 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path></svg>
+                            Каталог
+                        </button>
+                    </div>
+                    <div class="header__search">
+                        <form class="search-form">
+                            <button class="search-type">
+                                Везде
+                            </button>
+                            <input type="search" class="search-input" placeholder="Поиск по сайту">
+                            <button class="search-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="ui-f2"><path fill="#fff" d="M11 5a6 6 0 1 0 0 12c1.619 0 3.169-.639 4.24-1.656a1.101 1.101 0 0 1 1.537.019l4.93 4.93a1 1 0 0 1-1.414 1.414l-4.346-4.346A8.298 8.298 0 0 1 11 19a8 8 0 1 1 7.875-6.587 1 1 0 0 1-1.968-.351A6 6 0 0 0 11 5Z"></path></svg></button>
+                        </form>
+                    </div>
+                    <div class="header__action">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="ayb9"><path fill="" d="M8 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm10 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm-8.3 4.286c.016.015.185.165.5.323.376.187.971.391 1.8.391.829 0 1.425-.204 1.8-.391.175-.088.355-.19.5-.323a1 1 0 0 1 1.407 1.421C15.587 16.827 14.357 18 12 18c-2.358 0-3.587-1.173-3.707-1.293A1 1 0 0 1 9.7 15.286Z"></path><path fill="" d="M11 2a1 1 0 0 1 1-1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12a11 11 0 0 1 6.23-9.914 1 1 0 0 1 1.36.524c.292.72.69 1.565 1.362 2.233C10.592 5.481 11.524 6 13 6a1 1 0 1 1 0 2c-2.024 0-3.458-.743-4.459-1.74-.6-.596-1.027-1.267-1.34-1.875A9 9 0 1 0 12 3a1 1 0 0 1-1.001-1Z"></path></svg>
+                            <span>Войти</span>
+                        </a>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="yf9"><path fill="" fill-rule="evenodd" d="M11.514 1.126a1 1 0 0 1 .972 0l9 5A1 1 0 0 1 22 7v10a1 1 0 0 1-.514.874l-9 5A1 1 0 0 1 11 22v-9.412l-3-1.666V13a1 1 0 1 1-2 0V9.81L4 8.7v7.734l4.514 2.708a1 1 0 0 1-1.028 1.716l-5-3A1 1 0 0 1 2 17V7a1 1 0 0 1 .514-.874l9-5ZM5.06 7 7.5 8.356 14.44 4.5 12 3.144 5.06 7ZM16.5 5.644 9.56 9.5 12 10.856 18.94 7 16.5 5.644ZM20 8.7l-7 3.888v7.713l7-3.89V8.7Z" clip-rule="evenodd"></path></svg>
+                            <span>Заказы</span>
+                        </a>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="y5g"><path fill="" d="M7 5a4 4 0 0 0-4 4c0 3.552 2.218 6.296 4.621 8.22A21.525 21.525 0 0 0 12 19.91a21.58 21.58 0 0 0 4.377-2.69C18.78 15.294 21 12.551 21 9a4 4 0 0 0-4-4c-1.957 0-3.652 1.396-4.02 3.2a1 1 0 0 1-1.96 0C10.652 6.396 8.957 5 7 5Zm5 17c-.316-.02-.56-.147-.848-.278a23.542 23.542 0 0 1-4.781-2.942C3.777 16.705 1 13.449 1 9a6 6 0 0 1 6-6 6.183 6.183 0 0 1 5 2.568A6.183 6.183 0 0 1 17 3a6 6 0 0 1 6 6c0 4.448-2.78 7.705-5.375 9.78a23.599 23.599 0 0 1-4.78 2.942c-.543.249-.732.278-.845.278Z"></path></svg>
+                            <span>Избранное</span>
+                        </a>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="va7"><path fill="" d="M6 6a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2h4a1 1 0 0 1 .986 1.164l-1.582 9.494A4 4 0 0 1 17.46 22H6.54a4 4 0 0 1-3.945-3.342L1.014 9.164A1 1 0 0 1 2 8h4V6Zm2 2h5a1 1 0 1 1 0 2H3.18l1.389 8.329A2 2 0 0 0 6.54 20h10.92a2 2 0 0 0 1.972-1.671L20.82 10H17a1 1 0 0 1-1-1V6a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2Z"></path></svg>
+                            <span>Корзина</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- средняя строка шапки - старт -->
+
+            </div>
+        </header>
+
+        <!-- шапка сайта - конец -->
+
+       <main class="main">
+           <section class="catalog">
+               <div class="container">
+                   <div class="catalog__body">
+                        <a href="index.html" class="rec__item">
+                            <div class="rec__img">
+                                <img src="assets/imgs/products/product1.jpg" alt="">
+                            </div>
+                            <div class="old-price">
+                                <p>
+                                    -15%<span>827 р</span>
+                                </p>
+                            </div>
+                            <div class="rec__price">
+                                <div class="offer-price">
+                                    <p>432 Р</p>
+                                    <span>Цена на опт</span>
+                                </div>
+                                <div class="norm-price">
+                                    <span>500 Р</span>
+                                    <span>Средняя цена</span>
+                                </div>
+                            </div>
+                            <!-- <div class="rec__tag">
+                                <span>Бестселлер</span>
+                            </div> -->
+                            <div class="rec__name">
+                                <h2>Attack BioEX Концентрированный универсальный стиральный порошок 0,9 кг</h2>
+                            </div>
+                            <!-- <div class="rec__raiting">
+                                <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                <img src="assets/imgs/icons/Без названия.svg" alt="">
+                            </div> -->
+                            <div class="rec__action">
+                                <button class="main-btn">В корзину</button>
+                                <button class="in-list">В список</button>
+                            </div>
+                            <div class="rec__notice">
+                                <p>Склад не выбран</p>
+                            </div>
+                            <div class="rec__delivery">
+                                <p>Артем - <span> 100 шт.</span></p>
+                                <p>Хабаровск - <span> 100 шт.</span></p>
+                            </div>
+                        </a>
+                        <a href="index.html" class="rec__item">
+                            <div class="rec__img">
+                                <img src="assets/imgs/products/product1.jpg" alt="">
+                            </div>
+                            <div class="old-price">
+                                <p>
+                                    -15%<span>827 р</span>
+                                </p>
+                            </div>
+                            <div class="rec__price">
+                                <div class="offer-price">
+                                    <p>432 Р</p>
+                                    <span>Цена на опт</span>
+                                </div>
+                                <div class="norm-price">
+                                    <span>500 Р</span>
+                                    <span>Средняя цена</span>
+                                </div>
+                            </div>
+                            <!-- <div class="rec__tag">
+                                <span>Бестселлер</span>
+                            </div> -->
+                            <div class="rec__name">
+                                <h2>Attack BioEX Концентрированный универсальный стиральный порошок 0,9 кг</h2>
+                            </div>
+                            <!-- <div class="rec__raiting">
+                                <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                <img src="assets/imgs/icons/Без названия.svg" alt="">
+                            </div> -->
+                            <div class="rec__action">
+                                <button class="main-btn">В корзину</button>
+                                <button class="in-list">В список</button>
+                            </div>
+                            <div class="rec__notice">
+                                <p>Склад не выбран</p>
+                            </div>
+                            <div class="rec__delivery">
+                                <p>Артем - <span> 100 шт.</span></p>
+                                <p>Хабаровск - <span> 100 шт.</span></p>
+                            </div>
+                        </a>
+                        <a href="index.html" class="rec__item">
+                            <div class="rec__img">
+                                <img src="assets/imgs/products/product1.jpg" alt="">
+                            </div>
+                            <div class="old-price">
+                                <p>
+                                    -15%<span>827 р</span>
+                                </p>
+                            </div>
+                            <div class="rec__price">
+                                <div class="offer-price">
+                                    <p>432 Р</p>
+                                    <span>Цена на опт</span>
+                                </div>
+                                <div class="norm-price">
+                                    <span>500 Р</span>
+                                    <span>Средняя цена</span>
+                                </div>
+                            </div>
+                            <!-- <div class="rec__tag">
+                                <span>Бестселлер</span>
+                            </div> -->
+                            <div class="rec__name">
+                                <h2>Attack BioEX Концентрированный универсальный стиральный порошок 0,9 кг</h2>
+                            </div>
+                            <!-- <div class="rec__raiting">
+                                <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                <img src="assets/imgs/icons/Без названия.svg" alt="">
+                            </div> -->
+                            <div class="rec__action">
+                                <button class="main-btn">В корзину</button>
+                                <button class="in-list">В список</button>
+                            </div>
+                            <div class="rec__notice">
+                                <p>Склад не выбран</p>
+                            </div>
+                            <div class="rec__delivery">
+                                <p>Артем - <span> 100 шт.</span></p>
+                                <p>Хабаровск - <span> 100 шт.</span></p>
+                            </div>
+                        </a>
+                        <a href="index.html" class="rec__item">
+                            <div class="rec__img">
+                                <img src="assets/imgs/products/product1.jpg" alt="">
+                            </div>
+                            <div class="old-price">
+                                <p>
+                                    -15%<span>827 р</span>
+                                </p>
+                            </div>
+                            <div class="rec__price">
+                                <div class="offer-price">
+                                    <p>432 Р</p>
+                                    <span>Цена на опт</span>
+                                </div>
+                                <div class="norm-price">
+                                    <span>500 Р</span>
+                                    <span>Средняя цена</span>
+                                </div>
+                            </div>
+                            <!-- <div class="rec__tag">
+                                <span>Бестселлер</span>
+                            </div> -->
+                            <div class="rec__name">
+                                <h2>Attack BioEX Концентрированный универсальный стиральный порошок 0,9 кг</h2>
+                            </div>
+                            <!-- <div class="rec__raiting">
+                                <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                <img src="assets/imgs/icons/Без названия.svg" alt="">
+                            </div> -->
+                            <div class="rec__action">
+                                <button class="main-btn">В корзину</button>
+                                <button class="in-list">В список</button>
+                            </div>
+                            <div class="rec__notice">
+                                <p>Склад не выбран</p>
+                            </div>
+                            <div class="rec__delivery">
+                                <p>Артем - <span> 100 шт.</span></p>
+                                <p>Хабаровск - <span> 100 шт.</span></p>
+                            </div>
+                        </a>
+                        <a href="index.html" class="rec__item">
+                            <div class="rec__img">
+                                <img src="assets/imgs/products/product1.jpg" alt="">
+                            </div>
+                            <div class="old-price">
+                                <p>
+                                    -15%<span>827 р</span>
+                                </p>
+                            </div>
+                            <div class="rec__price">
+                                <div class="offer-price">
+                                    <p>432 Р</p>
+                                    <span>Цена на опт</span>
+                                </div>
+                                <div class="norm-price">
+                                    <span>500 Р</span>
+                                    <span>Средняя цена</span>
+                                </div>
+                            </div>
+                            <!-- <div class="rec__tag">
+                                <span>Бестселлер</span>
+                            </div> -->
+                            <div class="rec__name">
+                                <h2>Attack BioEX Концентрированный универсальный стиральный порошок 0,9 кг</h2>
+                            </div>
+                            <!-- <div class="rec__raiting">
+                                <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                <img src="assets/imgs/icons/Без названия.svg" alt="">
+                            </div> -->
+                            <div class="rec__action">
+                                <button class="main-btn">В корзину</button>
+                                <button class="in-list">В список</button>
+                            </div>
+                            <div class="rec__notice">
+                                <p>Склад не выбран</p>
+                            </div>
+                            <div class="rec__delivery">
+                                <p>Артем - <span> 100 шт.</span></p>
+                                <p>Хабаровск - <span> 100 шт.</span></p>
+                            </div>
+                        </a>
+                        <a href="index.html" class="rec__item">
+                            <div class="rec__img">
+                                <img src="assets/imgs/products/product1.jpg" alt="">
+                            </div>
+                            <div class="old-price">
+                                <p>
+                                    -15%<span>827 р</span>
+                                </p>
+                            </div>
+                            <div class="rec__price">
+                                <div class="offer-price">
+                                    <p>432 Р</p>
+                                    <span>Цена на опт</span>
+                                </div>
+                                <div class="norm-price">
+                                    <span>500 Р</span>
+                                    <span>Средняя цена</span>
+                                </div>
+                            </div>
+                            <!-- <div class="rec__tag">
+                                <span>Бестселлер</span>
+                            </div> -->
+                            <div class="rec__name">
+                                <h2>Attack BioEX Концентрированный универсальный стиральный порошок 0,9 кг</h2>
+                            </div>
+                            <!-- <div class="rec__raiting">
+                                <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                <img src="assets/imgs/icons/Без названия.svg" alt="">
+                            </div> -->
+                            <div class="rec__action">
+                                <button class="main-btn">В корзину</button>
+                                <button class="in-list">В список</button>
+                            </div>
+                            <div class="rec__notice">
+                                <p>Склад не выбран</p>
+                            </div>
+                            <div class="rec__delivery">
+                                <p>Артем - <span> 100 шт.</span></p>
+                                <p>Хабаровск - <span> 100 шт.</span></p>
+                            </div>
+                        </a>
+                        <a href="index.html" class="rec__item">
+                            <div class="rec__img">
+                                <img src="assets/imgs/products/product1.jpg" alt="">
+                            </div>
+                            <div class="old-price">
+                                <p>
+                                    -15%<span>827 р</span>
+                                </p>
+                            </div>
+                            <div class="rec__price">
+                                <div class="offer-price">
+                                    <p>432 Р</p>
+                                    <span>Цена на опт</span>
+                                </div>
+                                <div class="norm-price">
+                                    <span>500 Р</span>
+                                    <span>Средняя цена</span>
+                                </div>
+                            </div>
+                            <!-- <div class="rec__tag">
+                                <span>Бестселлер</span>
+                            </div> -->
+                            <div class="rec__name">
+                                <h2>Attack BioEX Концентрированный универсальный стиральный порошок 0,9 кг</h2>
+                            </div>
+                            <!-- <div class="rec__raiting">
+                                <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                <img src="assets/imgs/icons/Без названия.svg" alt="">
+                            </div> -->
+                            <div class="rec__action">
+                                <button class="main-btn">В корзину</button>
+                                <button class="in-list">В список</button>
+                            </div>
+                            <div class="rec__notice">
+                                <p>Склад не выбран</p>
+                            </div>
+                            <div class="rec__delivery">
+                                <p>Артем - <span> 100 шт.</span></p>
+                                <p>Хабаровск - <span> 100 шт.</span></p>
+                            </div>
+                        </a>
+                        <a href="index.html" class="rec__item">
+                            <div class="rec__img">
+                                <img src="assets/imgs/products/product1.jpg" alt="">
+                            </div>
+                            <div class="old-price">
+                                <p>
+                                    -15%<span>827 р</span>
+                                </p>
+                            </div>
+                            <div class="rec__price">
+                                <div class="offer-price">
+                                    <p>432 Р</p>
+                                    <span>Цена на опт</span>
+                                </div>
+                                <div class="norm-price">
+                                    <span>500 Р</span>
+                                    <span>Средняя цена</span>
+                                </div>
+                            </div>
+                            <!-- <div class="rec__tag">
+                                <span>Бестселлер</span>
+                            </div> -->
+                            <div class="rec__name">
+                                <h2>Attack BioEX Концентрированный универсальный стиральный порошок 0,9 кг</h2>
+                            </div>
+                            <!-- <div class="rec__raiting">
+                                <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                <img src="assets/imgs/icons/Без названия.svg" alt="">
+                            </div> -->
+                            <div class="rec__action">
+                                <button class="main-btn">В корзину</button>
+                                <button class="in-list">В список</button>
+                            </div>
+                            <div class="rec__notice">
+                                <p>Склад не выбран</p>
+                            </div>
+                            <div class="rec__delivery">
+                                <p>Артем - <span> 100 шт.</span></p>
+                                <p>Хабаровск - <span> 100 шт.</span></p>
+                            </div>
+                        </a>
+                        <a href="index.html" class="rec__item">
+                            <div class="rec__img">
+                                <img src="assets/imgs/products/product1.jpg" alt="">
+                            </div>
+                            <div class="old-price">
+                                <p>
+                                    -15%<span>827 р</span>
+                                </p>
+                            </div>
+                            <div class="rec__price">
+                                <div class="offer-price">
+                                    <p>432 Р</p>
+                                    <span>Цена на опт</span>
+                                </div>
+                                <div class="norm-price">
+                                    <span>500 Р</span>
+                                    <span>Средняя цена</span>
+                                </div>
+                            </div>
+                            <!-- <div class="rec__tag">
+                                <span>Бестселлер</span>
+                            </div> -->
+                            <div class="rec__name">
+                                <h2>Attack BioEX Концентрированный универсальный стиральный порошок 0,9 кг</h2>
+                            </div>
+                            <!-- <div class="rec__raiting">
+                                <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                <img src="assets/imgs/icons/Без названия.svg" alt="">
+                            </div> -->
+                            <div class="rec__action">
+                                <button class="main-btn">В корзину</button>
+                                <button class="in-list">В список</button>
+                            </div>
+                            <div class="rec__notice">
+                                <p>Склад не выбран</p>
+                            </div>
+                            <div class="rec__delivery">
+                                <p>Артем - <span> 100 шт.</span></p>
+                                <p>Хабаровск - <span> 100 шт.</span></p>
+                            </div>
+                        </a>
+                        <a href="index.html" class="rec__item">
+                            <div class="rec__img">
+                                <img src="assets/imgs/products/product1.jpg" alt="">
+                            </div>
+                            <div class="old-price">
+                                <p>
+                                    -15%<span>827 р</span>
+                                </p>
+                            </div>
+                            <div class="rec__price">
+                                <div class="offer-price">
+                                    <p>432 Р</p>
+                                    <span>Цена на опт</span>
+                                </div>
+                                <div class="norm-price">
+                                    <span>500 Р</span>
+                                    <span>Средняя цена</span>
+                                </div>
+                            </div>
+                            <!-- <div class="rec__tag">
+                                <span>Бестселлер</span>
+                            </div> -->
+                            <div class="rec__name">
+                                <h2>Attack BioEX Концентрированный универсальный стиральный порошок 0,9 кг</h2>
+                            </div>
+                            <!-- <div class="rec__raiting">
+                                <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                <img src="assets/imgs/icons/Без названия.svg" alt="">
+                            </div> -->
+                            <div class="rec__action">
+                                <button class="main-btn">В корзину</button>
+                                <button class="in-list">В список</button>
+                            </div>
+                            <div class="rec__notice">
+                                <p>Склад не выбран</p>
+                            </div>
+                            <div class="rec__delivery">
+                                <p>Артем - <span> 100 шт.</span></p>
+                                <p>Хабаровск - <span> 100 шт.</span></p>
+                            </div>
+                        </a>
+                        <a href="index.html" class="rec__item">
+                            <div class="rec__img">
+                                <img src="assets/imgs/products/product1.jpg" alt="">
+                            </div>
+                            <div class="old-price">
+                                <p>
+                                    -15%<span>827 р</span>
+                                </p>
+                            </div>
+                            <div class="rec__price">
+                                <div class="offer-price">
+                                    <p>432 Р</p>
+                                    <span>Цена на опт</span>
+                                </div>
+                                <div class="norm-price">
+                                    <span>500 Р</span>
+                                    <span>Средняя цена</span>
+                                </div>
+                            </div>
+                            <!-- <div class="rec__tag">
+                                <span>Бестселлер</span>
+                            </div> -->
+                            <div class="rec__name">
+                                <h2>Attack BioEX Концентрированный универсальный стиральный порошок 0,9 кг</h2>
+                            </div>
+                            <!-- <div class="rec__raiting">
+                                <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                <img src="assets/imgs/icons/Без названия.svg" alt="">
+                            </div> -->
+                            <div class="rec__action">
+                                <button class="main-btn">В корзину</button>
+                                <button class="in-list">В список</button>
+                            </div>
+                            <div class="rec__notice">
+                                <p>Склад не выбран</p>
+                            </div>
+                            <div class="rec__delivery">
+                                <p>Артем - <span> 100 шт.</span></p>
+                                <p>Хабаровск - <span> 100 шт.</span></p>
+                            </div>
+                        </a>
+                        <a href="index.html" class="rec__item">
+                            <div class="rec__img">
+                                <img src="assets/imgs/products/product1.jpg" alt="">
+                            </div>
+                            <div class="old-price">
+                                <p>
+                                    -15%<span>827 р</span>
+                                </p>
+                            </div>
+                            <div class="rec__price">
+                                <div class="offer-price">
+                                    <p>432 Р</p>
+                                    <span>Цена на опт</span>
+                                </div>
+                                <div class="norm-price">
+                                    <span>500 Р</span>
+                                    <span>Средняя цена</span>
+                                </div>
+                            </div>
+                            <!-- <div class="rec__tag">
+                                <span>Бестселлер</span>
+                            </div> -->
+                            <div class="rec__name">
+                                <h2>Attack BioEX Концентрированный универсальный стиральный порошок 0,9 кг</h2>
+                            </div>
+                            <!-- <div class="rec__raiting">
+                                <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                <img src="assets/imgs/icons/Без названия.svg" alt="">
+                            </div> -->
+                            <div class="rec__action">
+                                <button class="main-btn">В корзину</button>
+                                <button class="in-list">В список</button>
+                            </div>
+                            <div class="rec__notice">
+                                <p>Склад не выбран</p>
+                            </div>
+                            <div class="rec__delivery">
+                                <p>Артем - <span> 100 шт.</span></p>
+                                <p>Хабаровск - <span> 100 шт.</span></p>
+                            </div>
+                        </a>
+                   </div>
+               </div>
+           </section>
+       </main>
+        
+        <footer class="footer">
+
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="assets/libs/swiper-bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

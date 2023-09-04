@@ -1,0 +1,38 @@
+:root {
+    // размер основного текста
+    --normal-text: 16px;
+
+    // Основной цвет сайта
+    --main-color: #FF7171;
+
+    // черный цвет
+    --black-color: #001a34;
+
+    // размер основного текста
+    --main-font: 'Roboto', sans-serif;
+
+    // размер Заглавного текста
+    --big-text: 32px;
+
+    --inter-font: 'Inter', sans-serif;
+
+    // серый цвет 
+
+    --gray: #5a6c7d;
+
+    //Размеры для мобильных устройств
+    @media (max-width:768px) {
+        --normal-text: 14px;
+        --big-text: 24px;
+    }
+}
+
+
+$inter: var(--inter-font);
+$norm: var(--normal-text);
+$color: var(--main-color);
+$font: var(--main-font);
+$bigtext: var(--big-text);
+$gray: var(--gray);
+$black: var(--black-color);
+

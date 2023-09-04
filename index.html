@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUSS - Logistic</title>
+    <link rel="stylesheet" href="assets/libs/swiper-bundle.min.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+
+        <!-- шапка сайта - старт -->
+
+        <header class="header">
+            <div class="container">
+
+                <!-- верхняя строка шапки - Старт-->
+                <div class="header__row">
+                    <div class="header__location">
+                        <button class="icon-location"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="ui-f2"><path fill="currentColor" d="M8 9a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"></path><path fill="currentColor" d="M8 0a7 7 0 0 0-7 7c0 2.91 1.713 5.148 3.285 6.596a15.845 15.845 0 0 0 2.945 2.13c.155.085.32.172.406.205a1 1 0 0 0 .728 0c.086-.033.25-.12.406-.206a15.846 15.846 0 0 0 2.945-2.13C13.287 12.149 15 9.91 15 7a7 7 0 0 0-7-7ZM3 7a5 5 0 0 1 10 0c0 2.09-1.237 3.833-2.64 5.125A13.846 13.846 0 0 1 8 13.863a13.847 13.847 0 0 1-2.36-1.738C4.237 10.833 3 9.09 3 7Z"></path></svg> Город</button>
+                        <button class="icon-location-2">Укажите адрес доставки</button>
+                    </div>
+                    <div class="header__info">
+                        <a href="#">AUSS для бизнеса</a>
+                        <!-- <a href="#">Мобильное приложение</a> -->
+                        <a href="#">Продавайте на AUSS</a>
+                        <a href="#">Реферальная система</a>
+                        <!-- <a href="#">Подарочные сертификаты</a> -->
+                        <a href="#">Помощь</a>
+                        <a href="#">Пункты выдачи</a>
+                    </div>
+                </div>
+                <!-- верхняя строка шапки - Старт-->
+
+                <!-- средняя строка шапки - старт -->
+                <div class="header__row">
+                    <div class="header__logo">
+                        <a href="#">
+                            <img src="assets/imgs/icons/title.png" alt="">
+                            <span>
+                                AUSS
+                                LOGISTIC
+                            </span>
+                        </a>
+                    </div>
+                    <div class="header__catalog-btn">
+                        <button class="catalog-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="ui-f2"><path fill="currentColor" d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm2 0a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H8a1 1 0 0 1-1-1Zm0 6a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H8a1 1 0 0 1-1-1Zm1 5a1 1 0 1 0 0 2h6a1 1 0 1 0 0-2H8Zm-4-4a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm1 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path></svg>
+                            Каталог
+                        </button>
+                    </div>
+                    <div class="header__search">
+                        <form class="search-form">
+                            <button class="search-type">
+                                Везде
+                            </button>
+                            <input type="search" class="search-input" placeholder="Поиск по сайту">
+                            <button class="search-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="ui-f2"><path fill="#fff" d="M11 5a6 6 0 1 0 0 12c1.619 0 3.169-.639 4.24-1.656a1.101 1.101 0 0 1 1.537.019l4.93 4.93a1 1 0 0 1-1.414 1.414l-4.346-4.346A8.298 8.298 0 0 1 11 19a8 8 0 1 1 7.875-6.587 1 1 0 0 1-1.968-.351A6 6 0 0 0 11 5Z"></path></svg></button>
+                        </form>
+                    </div>
+                    <div class="header__action">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="ayb9"><path fill="" d="M8 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm10 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm-8.3 4.286c.016.015.185.165.5.323.376.187.971.391 1.8.391.829 0 1.425-.204 1.8-.391.175-.088.355-.19.5-.323a1 1 0 0 1 1.407 1.421C15.587 16.827 14.357 18 12 18c-2.358 0-3.587-1.173-3.707-1.293A1 1 0 0 1 9.7 15.286Z"></path><path fill="" d="M11 2a1 1 0 0 1 1-1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12a11 11 0 0 1 6.23-9.914 1 1 0 0 1 1.36.524c.292.72.69 1.565 1.362 2.233C10.592 5.481 11.524 6 13 6a1 1 0 1 1 0 2c-2.024 0-3.458-.743-4.459-1.74-.6-.596-1.027-1.267-1.34-1.875A9 9 0 1 0 12 3a1 1 0 0 1-1.001-1Z"></path></svg>
+                            <span>Войти</span>
+                        </a>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="yf9"><path fill="" fill-rule="evenodd" d="M11.514 1.126a1 1 0 0 1 .972 0l9 5A1 1 0 0 1 22 7v10a1 1 0 0 1-.514.874l-9 5A1 1 0 0 1 11 22v-9.412l-3-1.666V13a1 1 0 1 1-2 0V9.81L4 8.7v7.734l4.514 2.708a1 1 0 0 1-1.028 1.716l-5-3A1 1 0 0 1 2 17V7a1 1 0 0 1 .514-.874l9-5ZM5.06 7 7.5 8.356 14.44 4.5 12 3.144 5.06 7ZM16.5 5.644 9.56 9.5 12 10.856 18.94 7 16.5 5.644ZM20 8.7l-7 3.888v7.713l7-3.89V8.7Z" clip-rule="evenodd"></path></svg>
+                            <span>Заказы</span>
+                        </a>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="y5g"><path fill="" d="M7 5a4 4 0 0 0-4 4c0 3.552 2.218 6.296 4.621 8.22A21.525 21.525 0 0 0 12 19.91a21.58 21.58 0 0 0 4.377-2.69C18.78 15.294 21 12.551 21 9a4 4 0 0 0-4-4c-1.957 0-3.652 1.396-4.02 3.2a1 1 0 0 1-1.96 0C10.652 6.396 8.957 5 7 5Zm5 17c-.316-.02-.56-.147-.848-.278a23.542 23.542 0 0 1-4.781-2.942C3.777 16.705 1 13.449 1 9a6 6 0 0 1 6-6 6.183 6.183 0 0 1 5 2.568A6.183 6.183 0 0 1 17 3a6 6 0 0 1 6 6c0 4.448-2.78 7.705-5.375 9.78a23.599 23.599 0 0 1-4.78 2.942c-.543.249-.732.278-.845.278Z"></path></svg>
+                            <span>Избранное</span>
+                        </a>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="va7"><path fill="" d="M6 6a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2h4a1 1 0 0 1 .986 1.164l-1.582 9.494A4 4 0 0 1 17.46 22H6.54a4 4 0 0 1-3.945-3.342L1.014 9.164A1 1 0 0 1 2 8h4V6Zm2 2h5a1 1 0 1 1 0 2H3.18l1.389 8.329A2 2 0 0 0 6.54 20h10.92a2 2 0 0 0 1.972-1.671L20.82 10H17a1 1 0 0 1-1-1V6a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2Z"></path></svg>
+                            <span>Корзина</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- средняя строка шапки - старт -->
+            </div>
+        </header>
+
+        <nav class="mobile-bar">
+            <ul>
+                <li>
+                    <a href="#">
+                        Главная
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Каталог
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                       Корзина
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Кабинет
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- шапка сайта - конец -->
+
+        <main class="main">
+            <div class="content">
+                <div class="product">
+                    <div class="container">
+
+                        <!-- шапка продукта - старт -->
+
+                        <div class="product__head">
+                                <!-- хлебные крошки start -->
+                            <div class="breadcrumbs">
+                                <a href="#">Главная</a>
+                                <a href="#">Категория</a>
+                                <a href="#">Продукт</a>
+                            </div>
+                                <!-- хлебные крошки end -->
+
+                                <!-- техническаая информация start -->
+                            <div class="product__article">
+                                <span>Код товара: 173917746</span>
+                                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="ui-f2"><path fill="currentColor" d="M1 3a1 1 0 0 1 1-1h4a1 1 0 1 1 0 2H2a1 1 0 0 1-1-1Zm0 4a1 1 0 0 1 1-1h8a1 1 0 1 1 0 2H2a1 1 0 0 1-1-1Zm0 4a1 1 0 0 1 1-1h4a1 1 0 1 1 0 2H2a1 1 0 0 1-1-1Zm12-3a1 1 0 0 1 1 1v1h1a1 1 0 1 1 0 2h-1v1a1 1 0 1 1-2 0v-1h-1a1 1 0 1 1 0-2h1V9a1 1 0 0 1 1-1Z"></path></svg>Добавить к сравнению</a>
+                                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="ui-f2"><path fill="currentColor" d="M7.293 1.293a1 1 0 0 1 1.414 0l2 2a1 1 0 0 1-1.414 1.414L9 4.414V9a1 1 0 1 1-2 0V4.414l-.293.293a1 1 0 0 1-1.414-1.414l2-2ZM2 9a3 3 0 0 1 3-3 1 1 0 0 1 0 2 1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1 1 1 0 1 1 0-2 3 3 0 0 1 3 3v3a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V9Z"></path></svg>Поделиться</a>
+                            </div>
+                                <!-- техническаая информация end -->
+
+                        </div>
+
+                        <!-- шапка продукта - старт -->
+
+                        <!-- Блок акций и предложений start -->
+                        <div class="product__offer">
+                            <span>-45%</span>
+                            <span>Рассрочка 0-0-6</span>
+                        </div>
+
+                        <div class="product__body">
+                            <!-- мини слайдер -->
+                            <div class="product__slider-preview swiper">
+                                <div class="product__slider-preview-list swiper-wrapper">
+                                    <div class="product__slider-preview-slide swiper-slide">
+                                        <img src="assets/imgs/products/product1.jpg" alt="">
+                                    </div>
+                                    <div class="product__slider-preview-slide swiper-slide">
+                                        <img src="assets/imgs/products/product2.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- мини слайдер -->
+                            
+                            <!-- Основной слайдер -->
+                            <div class="product__slider swiper">
+                                <div class="product__slider-list swiper-wrapper">
+                                    <a href="assets/imgs/products/product1.jpg" data-fancybox="gallery" class="product__slider-slide swiper-slide">
+                                        <img src="assets/imgs/products/product1.jpg" alt="">
+                                    </a>
+                                    <a href="assets/imgs/products/product2.jpg" data-fancybox="gallery" class="product__slider-slide swiper-slide">
+                                        <img src="assets/imgs/products/product2.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Основной слайдер -->
+
+                            <div class="product__info">
+                                <div class="product-title">
+                                    <h1>
+                                        Очищающий Мусс для умывания против акне
+                                    </h1>
+                                </div>
+                                <div class="product-action">
+                                    <a class="raiting">
+                                        <div class="stars">
+                                            <svg width='16' height='16' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg' fill='#ffb800'><path d='M8.00002 0C8.3607 0 8.69342 0.182083 8.87078 0.476513L11.1141 4.20077L15.1897 4.93889C15.5476 5.00372 15.8396 5.246 15.9516 5.57121C16.0637 5.89643 15.9781 6.25304 15.7282 6.5019L12.7697 9.44886L13.5174 13.9172C13.575 14.2617 13.4239 14.6077 13.1252 14.8155C12.8265 15.0232 12.4295 15.0583 12.0945 14.9067L8.00002 13.0528L3.9055 14.9067C3.57058 15.0583 3.17355 15.0232 2.87483 14.8155C2.57611 14.6077 2.42505 14.2617 2.48269 13.9172L3.23034 9.44886L0.271822 6.5019C0.0219778 6.25304 -0.0636177 5.89643 0.0484322 5.57121C0.160482 5.246 0.452423 5.00372 0.810347 4.93889L4.88595 4.20077L7.12927 0.476513C7.30662 0.182083 7.63935 0 8.00002 0Z'/></svg>
+                                            <svg width='16' height='16' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg' fill='#ffb800'><path d='M8.00002 0C8.3607 0 8.69342 0.182083 8.87078 0.476513L11.1141 4.20077L15.1897 4.93889C15.5476 5.00372 15.8396 5.246 15.9516 5.57121C16.0637 5.89643 15.9781 6.25304 15.7282 6.5019L12.7697 9.44886L13.5174 13.9172C13.575 14.2617 13.4239 14.6077 13.1252 14.8155C12.8265 15.0232 12.4295 15.0583 12.0945 14.9067L8.00002 13.0528L3.9055 14.9067C3.57058 15.0583 3.17355 15.0232 2.87483 14.8155C2.57611 14.6077 2.42505 14.2617 2.48269 13.9172L3.23034 9.44886L0.271822 6.5019C0.0219778 6.25304 -0.0636177 5.89643 0.0484322 5.57121C0.160482 5.246 0.452423 5.00372 0.810347 4.93889L4.88595 4.20077L7.12927 0.476513C7.30662 0.182083 7.63935 0 8.00002 0Z'/></svg>
+                                            <svg width='16' height='16' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg' fill='#ffb800'><path d='M8.00002 0C8.3607 0 8.69342 0.182083 8.87078 0.476513L11.1141 4.20077L15.1897 4.93889C15.5476 5.00372 15.8396 5.246 15.9516 5.57121C16.0637 5.89643 15.9781 6.25304 15.7282 6.5019L12.7697 9.44886L13.5174 13.9172C13.575 14.2617 13.4239 14.6077 13.1252 14.8155C12.8265 15.0232 12.4295 15.0583 12.0945 14.9067L8.00002 13.0528L3.9055 14.9067C3.57058 15.0583 3.17355 15.0232 2.87483 14.8155C2.57611 14.6077 2.42505 14.2617 2.48269 13.9172L3.23034 9.44886L0.271822 6.5019C0.0219778 6.25304 -0.0636177 5.89643 0.0484322 5.57121C0.160482 5.246 0.452423 5.00372 0.810347 4.93889L4.88595 4.20077L7.12927 0.476513C7.30662 0.182083 7.63935 0 8.00002 0Z'/></svg>
+                                            <svg width='16' height='16' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg' fill='#ffb800'><path d='M8.00002 0C8.3607 0 8.69342 0.182083 8.87078 0.476513L11.1141 4.20077L15.1897 4.93889C15.5476 5.00372 15.8396 5.246 15.9516 5.57121C16.0637 5.89643 15.9781 6.25304 15.7282 6.5019L12.7697 9.44886L13.5174 13.9172C13.575 14.2617 13.4239 14.6077 13.1252 14.8155C12.8265 15.0232 12.4295 15.0583 12.0945 14.9067L8.00002 13.0528L3.9055 14.9067C3.57058 15.0583 3.17355 15.0232 2.87483 14.8155C2.57611 14.6077 2.42505 14.2617 2.48269 13.9172L3.23034 9.44886L0.271822 6.5019C0.0219778 6.25304 -0.0636177 5.89643 0.0484322 5.57121C0.160482 5.246 0.452423 5.00372 0.810347 4.93889L4.88595 4.20077L7.12927 0.476513C7.30662 0.182083 7.63935 0 8.00002 0Z'/></svg>
+                                            <svg width='16' height='16' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg' fill='#ffb800'><path d='M8.00002 0C8.3607 0 8.69342 0.182083 8.87078 0.476513L11.1141 4.20077L15.1897 4.93889C15.5476 5.00372 15.8396 5.246 15.9516 5.57121C16.0637 5.89643 15.9781 6.25304 15.7282 6.5019L12.7697 9.44886L13.5174 13.9172C13.575 14.2617 13.4239 14.6077 13.1252 14.8155C12.8265 15.0232 12.4295 15.0583 12.0945 14.9067L8.00002 13.0528L3.9055 14.9067C3.57058 15.0583 3.17355 15.0232 2.87483 14.8155C2.57611 14.6077 2.42505 14.2617 2.48269 13.9172L3.23034 9.44886L0.271822 6.5019C0.0219778 6.25304 -0.0636177 5.89643 0.0484322 5.57121C0.160482 5.246 0.452423 5.00372 0.810347 4.93889L4.88595 4.20077L7.12927 0.476513C7.30662 0.182083 7.63935 0 8.00002 0Z'/></svg>
+                                        </div>
+                                        <span>
+                                            203 отзыва
+                                        </span>
+                                    </a>
+                                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="ui-f2"><path fill="" d="M8 11a1 1 0 0 0 .015-2 1.26 1.26 0 0 0 .361-.068A4.897 4.897 0 0 0 9.53 8.41C10.147 8.026 11 7.26 11 6a3 3 0 0 0-6 0 1 1 0 1 0 2 0 1 1 0 0 1 2 0c0 .24-.147.475-.53.715a2.9 2.9 0 0 1-.713.315l-.004.001a1 1 0 0 0 .231 1.97A1 1 0 0 0 8 11Z"></path><path fill="" d="M0 5a5 5 0 0 1 5-5h6a5 5 0 0 1 5 5v4a5.002 5.002 0 0 1-3.75 4.842 1 1 0 1 1-.5-1.936A3.002 3.002 0 0 0 14 9V5a3 3 0 0 0-3-3H5a3 3 0 0 0-3 3v5a2 2 0 0 0 2 2 1 1 0 0 1 1 1v.382l2.553-1.276a1 1 0 1 1 .894 1.788l-4 2A1 1 0 0 1 3 15v-1.126A4.002 4.002 0 0 1 0 10V5Z"></path></svg> 9 вопросов</a>
+                                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="ui-f2"><path fill="" d="M6.5 5.5c.15 0 .289.08.363.212l.64 1.134 1.16.224a.417.417 0 0 1 .224.695l-.84.893.213 1.36a.417.417 0 0 1-.593.44L6.5 9.896l-1.167.564a.417.417 0 0 1-.593-.44l.214-1.361-.84-.893a.417.417 0 0 1 .224-.695l1.159-.224.64-1.134A.417.417 0 0 1 6.5 5.5Z"></path><path fill="" d="M3 2a3 3 0 0 0-3 3v6a3 3 0 0 0 3 3h7c1.38 0 2.544-.933 2.893-2.203l1.552 1.035A1 1 0 0 0 16 12V4a1 1 0 0 0-1.555-.832l-1.552 1.035A3.001 3.001 0 0 0 10 2H3Zm8 4a1 1 0 0 0 1.555.832L14 5.869v4.263l-1.445-.964A1 1 0 0 0 11 10v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v1Z"></path></svg><span>Видео</span></a>
+                                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path fill="" d="M10.707 4.293a1 1 0 0 1 0 1.414l-4 4a1 1 0 0 1-1.414-1.414l4-4a1 1 0 0 1 1.414 0ZM7 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm4 4a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path><path fill="" d="M0 5a5 5 0 0 1 5-5h6a5 5 0 0 1 5 5v4a5.002 5.002 0 0 1-3.75 4.842 1 1 0 1 1-.5-1.936A3.002 3.002 0 0 0 14 9V5a3 3 0 0 0-3-3H5a3 3 0 0 0-3 3v5a2 2 0 0 0 2 2 1 1 0 0 1 1 1v.382l2.553-1.276a1 1 0 1 1 .894 1.788l-4 2A1 1 0 0 1 3 15v-1.126A4.002 4.002 0 0 1 0 10V5Z"></path></svg><span>203 отзыва</span></a>
+                                </div>
+                                <div class="product-price">
+                                    <div class="price">
+                                        <span class="real-price">406 ₽</span>
+                                        <span class="old-price">1 270 ₽</span>
+                                    </div>
+                                    <!-- <div class="price-action">
+                                        <span>259рублей при оплате картой</span>
+                                    </div> -->
+                                    <!-- <div class="price-subscribe">
+                                        <a href="#">Узнать о снижении цены</a>
+                                    </div> -->
+                                </div>
+                                <div class="product-buy">
+                                    <button class="main-btn">Добавить в корзину</button>
+                                    <button class="go-favorite"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="ui-f2"><path fill="" d="M7 5a4 4 0 0 0-4 4c0 3.552 2.218 6.296 4.621 8.22A21.525 21.525 0 0 0 12 19.91a21.58 21.58 0 0 0 4.377-2.69C18.78 15.294 21 12.551 21 9a4 4 0 0 0-4-4c-1.957 0-3.652 1.396-4.02 3.2a1 1 0 0 1-1.96 0C10.652 6.396 8.957 5 7 5Zm5 17c-.316-.02-.56-.147-.848-.278a23.542 23.542 0 0 1-4.781-2.942C3.777 16.705 1 13.449 1 9a6 6 0 0 1 6-6 6.183 6.183 0 0 1 5 2.568A6.183 6.183 0 0 1 17 3a6 6 0 0 1 6 6c0 4.448-2.78 7.705-5.375 9.78a23.599 23.599 0 0 1-4.78 2.942c-.543.249-.732.278-.845.278Z"></path></svg></button>
+                                    <span>Доставка 2 октября</span>
+                                </div>
+                                <div class="product-info">
+                                    <p>О товаре</p>
+                                    <div class="product-info__row">
+                                        <span>Тип</span>
+                                        <span>lorem</span>
+                                    </div>
+                                    <div class="product-info__row">
+                                        <span>Ipsum</span>
+                                        <span>30</span>
+                                    </div>
+                                    <div class="product-info__row">
+                                        <span>Материал</span>
+                                        <span>Химия</span>
+                                    </div>
+                                    <a class="link" data-goto=".product__bio" href="#">Перейти к описанию</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Блок акций и предложений end -->
+
+                        <div class="product__bio">
+                            <div class="bio__bio">
+                                <span>Описание</span>
+                                <p>
+                                    Набор стаканов для виски Crystalite Bohemia Ardea/Amudsen 320 мл (2 шт),91 x 91 x 91 mm.
+                                </p>
+                                <p>
+                                    Производитель оставляет за собой право вносить изменения в конструкцию, не ухудшающие потребительские свойства изделия.
+                                </p>
+                            </div>
+                            <div class="bio__complect">
+                                <span>Комплектация</span>
+                                <p>
+                                    2 стакана
+                                </p>
+                            </div>
+                            <div class="bio__character">
+                                <div class="item">
+                                    <span>Тип</span>
+                                    <span>Моющее средство</span>
+                                </div>
+                                <div class="item">
+                                    <span>Тип</span>
+                                    <span>Моющее средство</span>
+                                </div>
+                                <div class="item">
+                                    <span>Тип</span>
+                                    <span>Моющее средство</span>
+                                </div>
+                                <div class="item">
+                                    <span>Тип</span>
+                                    <span>Моющее средство</span>
+                                </div>
+                                <div class="item">
+                                    <span>Тип</span>
+                                    <span>Моющее средство</span>
+                                </div>
+                            </div>
+                            <div class="bio__target">
+                                <p>
+                                    Назначение питьевого стекла: для виски, для воды, для коктейлей, универсальный, для бренди, для пива
+                                </p>
+                            </div>
+                            <div class="bio__doptext">
+                                <span>
+                                    Информация о технических характеристиках, комплекте поставки, стране изготовления, внешнем виде и цвете товара носит справочный характер и основывается на последних доступных к моменту публикации сведениях
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rec">
+                   <div class="container">
+                        <div class="rec__title">
+                            <h4>
+                                Рекомендуем также
+                            </h4>
+                        </div>
+                        <div class="rec__slider swiper">
+                            <div class="rec__list swiper-wrapper">
+                                <a href="#" class="rec__item swiper-slide">
+                                    <div class="rec__img">
+                                        <img src="assets/imgs/products/product1.jpg" alt="">
+                                        <span>-79%</span>
+                                    </div>
+                                    <div class="rec__price">
+                                        <div class="offer-price">
+                                            <p>432 Р</p>
+                                            <span>Со скидкой</span>
+                                        </div>
+                                        <div class="norm-price">
+                                            <span>500 Р</span>
+                                            <span>2400 Р</span>
+                                        </div>
+                                    </div>
+                                    <div class="rec__tag">
+                                        <span>Бестселлер</span>
+                                    </div>
+                                    <div class="rec__name">
+                                        <h2>Набор стаканов и мало для воды 100 мл</h2>
+                                    </div>
+                                    <div class="rec__raiting">
+                                        <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                        <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                        <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                        <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                        <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                    </div>
+                                    <div class="rec__action">
+                                        <button class="main-btn">В корзину</button>
+                                    </div>
+                                 
+                                    <div class="rec__delivery">
+                                        <p>Доставим <span>7 Октября</span></p>
+                                    </div>
+                                </a>
+                                <a href="#" class="rec__item swiper-slide">
+                                    <div class="rec__img">
+                                        <img src="assets/imgs/products/product1.jpg" alt="">
+                                        <span>-79%</span>
+                                    </div>
+                                    <div class="rec__price">
+                                        <div class="offer-price">
+                                            <p>432 Р</p>
+                                            <span>Со скидкой</span>
+                                        </div>
+                                        <div class="norm-price">
+                                            <span>500 Р</span>
+                                            <span>2400 Р</span>
+                                        </div>
+                                    </div>
+                                    <div class="rec__tag">
+                                        <span>Бестселлер</span>
+                                    </div>
+                                    <div class="rec__name">
+                                        <h2>Набор стаканов и мало для воды 100 мл</h2>
+                                    </div>
+                                    <div class="rec__raiting">
+                                        <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                        <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                        <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                        <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                        <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                    </div>
+                                    <div class="rec__action">
+                                        <button class="main-btn">В корзину</button>
+                                    </div>
+                                    <div class="rec__delivery">
+                                        <p>Доставим <span>7 Октября</span></p>
+                                    </div>
+                                </a>
+                                <a href="#" class="rec__item swiper-slide">
+                                    <div class="rec__img">
+                                        <img src="assets/imgs/products/product1.jpg" alt="">
+                                        <span>-79%</span>
+                                    </div>
+                                    <div class="rec__price">
+                                        <div class="offer-price">
+                                            <p>432 Р</p>
+                                            <span>Со скидкой</span>
+                                        </div>
+                                        <div class="norm-price">
+                                            <span>500 Р</span>
+                                            <span>2400 Р</span>
+                                        </div>
+                                    </div>
+                                    <div class="rec__tag">
+                                        <span>Бестселлер</span>
+                                    </div>
+                                    <div class="rec__name">
+                                        <h2>Набор стаканов и мало для воды 100 мл</h2>
+                                    </div>
+                                    <div class="rec__raiting">
+                                        <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                        <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                        <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                        <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                        <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                    </div>
+                                    <div class="rec__action">
+                                        <button class="main-btn">В корзину</button>
+                                    </div>
+                                    <div class="rec__delivery">
+                                        <p>Доставим <span>7 Октября</span></p>
+                                    </div>
+                                </a>
+                                <a href="#" class="rec__item swiper-slide">
+                                    <div class="rec__img">
+                                        <img src="assets/imgs/products/product1.jpg" alt="">
+                                        <span>-79%</span>
+                                    </div>
+                                    <div class="rec__price">
+                                        <div class="offer-price">
+                                            <p>432 Р</p>
+                                            <span>Со скидкой</span>
+                                        </div>
+                                        <div class="norm-price">
+                                            <span>500 Р</span>
+                                            <span>2400 Р</span>
+                                        </div>
+                                    </div>
+                                    <div class="rec__tag">
+                                        <span>Бестселлер</span>
+                                    </div>
+                                    <div class="rec__name">
+                                        <h2>Набор стаканов и мало для воды 100 мл</h2>
+                                    </div>
+                                    <div class="rec__raiting">
+                                        <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                        <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                        <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                        <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                        <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                    </div>
+                                    <div class="rec__action">
+                                        <button class="main-btn">В корзину</button>
+                                    </div>
+                                    <div class="rec__delivery">
+                                        <p>Доставим <span>7 Октября</span></p>
+                                    </div>
+                                </a>
+                                <a href="#" class="rec__item swiper-slide">
+                                    <div class="rec__img">
+                                        <img src="assets/imgs/products/product1.jpg" alt="">
+                                        <span>-79%</span>
+                                    </div>
+                                    <div class="rec__price">
+                                        <div class="offer-price">
+                                            <p>432 Р</p>
+                                            <span>Со скидкой</span>
+                                        </div>
+                                        <div class="norm-price">
+                                            <span>500 Р</span>
+                                            <span>2400 Р</span>
+                                        </div>
+                                    </div>
+                                    <div class="rec__tag">
+                                        <span>Бестселлер</span>
+                                    </div>
+                                    <div class="rec__name">
+                                        <h2>Набор стаканов и мало для воды 100 мл</h2>
+                                    </div>
+                                    <div class="rec__raiting">
+                                        <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                        <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                        <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                        <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                        <img src="assets/imgs/icons/Без названия.svg" alt="">
+                                    </div>
+                                    <div class="rec__action">
+                                        <button class="main-btn">В корзину</button>
+                                    </div>
+                                    <div class="rec__delivery">
+                                        <p>Доставим <span>7 Октября</span></p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer class="footer">
+
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="assets/libs/swiper-bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
